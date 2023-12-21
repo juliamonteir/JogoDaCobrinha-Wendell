@@ -13,7 +13,7 @@ public class SnakeGrow : MonoBehaviour
 
       if (snakeTail == null)
       {
-         Debug.Log("SnakeTail");
+         Debug.Log("SnakeTail not found");
       }
    }
 
@@ -28,7 +28,7 @@ public class SnakeGrow : MonoBehaviour
          }
          else
          {
-            Debug.Log("SnakeTail");
+            Debug.Log("SnakeTail is null");
          }
       }
    }

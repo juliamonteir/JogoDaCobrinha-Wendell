@@ -8,7 +8,8 @@ public class SnakeTail : MonoBehaviour
    public Transform SnakeTailGfx;
    public float circleDiamenter;
 
-   private List<Transform> snakeTail = new List<Transform>();
+   public GameObject tailPrefab;
+   public List<Transform> tail = new List<Transform>();
    private List<Vector2> positions = new List<Vector2>();
    private static Vector2[] position;
 
@@ -31,16 +32,15 @@ public class SnakeTail : MonoBehaviour
          distance -= circleDiamenter;
       }
       
-      for (int i = 0; i < snakeTail.Count; i++)
+      for (int i = 0; i < tail.Count; i++)
       {
-         snakeTail[i].position = Vector2.Lerp(position[i + 1], position[i], distance / circleDiamenter);
+         tail[i].position = Vector2.Lerp(position[i + 1], position[i], distance / circleDiamenter);
       }
    }
 
    public void AddTail()
    {
-      Transform tail = Instantiate(SnakeTailGfx, position[positions.Count - 1], Quaternion.identity, transform);
-      snakeTail.Add(tail);
-      positions.Add(tail.position);
+      GameObject newTail = Instantiate(tailPrefab, tail[tail.Count - 1].position, Quaternion.identity);
+      tail.Add(newTail.transform);
    }
 }

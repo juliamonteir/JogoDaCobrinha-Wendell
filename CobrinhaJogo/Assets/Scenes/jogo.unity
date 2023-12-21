@@ -553,6 +553,7 @@ GameObject:
   - component: {fileID: 399868032}
   - component: {fileID: 399868033}
   - component: {fileID: 399868034}
+  - component: {fileID: 399868035}
   m_Layer: 0
   m_Name: Snake
   m_TagString: Untagged
@@ -622,6 +623,27 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.51
+--- !u!50 &399868035
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399868030}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &406205742
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,8 +748,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406205742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.283183, y: -1.4427403, z: -0.0358253}
-  m_LocalScale: {x: 1.0652289, y: 9.6188, z: 1}
+  m_LocalPosition: {x: -10.92, y: -1.4427, z: -0.0358253}
+  m_LocalScale: {x: 1.0652289, y: 10.340211, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 103364029}
@@ -847,7 +869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6962926524361704728, guid: cb66ea70eab371740aa8544980cf1a95, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb66ea70eab371740aa8544980cf1a95, type: 3}
@@ -1096,8 +1118,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333336649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.933916, y: -1.3821403, z: -0.0358253}
-  m_LocalScale: {x: 1.0652289, y: 9.6188, z: 1}
+  m_LocalPosition: {x: 10.57, y: -1.3821, z: -0.0358253}
+  m_LocalScale: {x: 1.0652289, y: 10.340211, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 103364029}
