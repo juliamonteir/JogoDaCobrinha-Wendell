@@ -17,6 +17,9 @@ public class Move : MonoBehaviour
         gM = FindObjectOfType<GameManage>();
         snakeBodies = new List<Transform>();
         snakeBodies.Add(transform);
+        
+        gM.hScore = PlayerPrefs.GetInt("HScore");
+        gM.hscoreText.text = "H-Score:" + gM.hScore.ToString();
     }
 
     private void Update()
@@ -58,8 +61,24 @@ public class Move : MonoBehaviour
     public void BtnStartGame()
     {
         gM.gameOverPanel.SetActive(false);
+        gM.startPanel.SetActive(false);
+        
         Time.timeScale = 1;
         transform.position = Vector2.zero;
+        direction = Vector2.zero;
+
+        for (int i = 1; i < snakeBodies.Count; i++)
+        {
+            Destroy(snakeBodies[i].gameObject);
+        }
+        snakeBodies.Clear();
+        snakeBodies.Add(transform);
+
+        gM.score = 0;
+        gM.scoreText.text = "Score: 0";
+        
+        gM.hScore = PlayerPrefs.GetInt("HScore");
+        gM.hscoreText.text = "H-Score:" + gM.hScore.ToString();
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
