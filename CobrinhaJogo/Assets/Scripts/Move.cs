@@ -9,7 +9,7 @@ public class Move : MonoBehaviour
     [SerializeField] Vector2 direction;
     [SerializeField] private List<Transform> snakeBodies;
     [SerializeField] private Transform body;
-
+    
     GameManage gM;
 
     private void Start()
@@ -31,6 +31,26 @@ public class Move : MonoBehaviour
             direction = Vector2.right * xAxis;
         if (YAxis != 0)
             direction = Vector2.up * YAxis;
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            transform.eulerAngles = new Vector3(0,0 ,90f);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            transform.eulerAngles = new Vector3(0,0 ,-90f);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.eulerAngles = new Vector3(180f,0 ,180f);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.eulerAngles = new Vector3(0,0 ,0f);
+        }
     }
 
     private void FixedUpdate()
