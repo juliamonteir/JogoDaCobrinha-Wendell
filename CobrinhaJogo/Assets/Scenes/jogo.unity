@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a97dfb84d00554ca9cab9312a99879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imprimindo: 1
+  imprimindo: 0
   tempoEntreLetra: 0.08
 --- !u!82 &14852301
 AudioSource:
@@ -1436,7 +1436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &731805387
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1663,7 +1663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a97dfb84d00554ca9cab9312a99879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imprimindo: 1
+  imprimindo: 0
   tempoEntreLetra: 0.08
 --- !u!1 &892475401
 GameObject:
@@ -2013,7 +2013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a97dfb84d00554ca9cab9312a99879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imprimindo: 1
+  imprimindo: 0
   tempoEntreLetra: 0.08
 --- !u!82 &1142673628
 AudioSource:
@@ -2326,7 +2326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1311484351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2339,7 +2339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a97dfb84d00554ca9cab9312a99879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imprimindo: 1
+  imprimindo: 0
   tempoEntreLetra: 0.08
 --- !u!82 &1311484352
 AudioSource:
